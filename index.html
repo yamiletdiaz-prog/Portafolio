@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yamilet Díaz | Portafolio Premium</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Y<span>.</span></a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Inicio</a>
+        <a href="#about" class="nav-link">Acerca de</a>
+        <a href="#resume" class="nav-link">Reanudar</a>
+        <a href="#services" class="nav-link">Servicios</a>
+        <a href="#portfolio" class="nav-link">Cartera</a>
+        <div class="nav-dropdown">
+          <a href="#contact" class="nav-link dropdown-toggle">Contacto <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="#contact"><i class="fas fa-envelope"></i> Enviar mensaje</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:tuemail@email.com"><i class="fas fa-at"></i> Email directo</a>
+          </div>
+        </div>
+      </nav>
+      <a href="#contact" class="btn btn-primary nav-cta">Comience</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HOME / HERO -->
+  <section class="hero" id="home">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">👋 Bienvenido a mi portafolio</span>
+        <h1 class="hero-title">
+          Soy <span class="gradient-text">Yamilet Díaz</span>
+        </h1>
+        <p class="hero-subtitle typewriter" id="typewriter"></p>
+        <p class="hero-description">
+          Desarrolladora junior con pasión por crear aplicaciones web modernas,
+          funcionales y escalables usando Python, Django, JavaScript y React.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <i class="fas fa-rocket"></i> Comience
+          </a>
+          <a href="assets/cv/Yamilet_Diaz_CV.pdf" download class="btn btn-outline btn-lg">
+            <i class="fas fa-download"></i> Descargar CV
+          </a>
+          <a href="#portfolio" class="btn btn-outline btn-lg">
+            <i class="fas fa-eye"></i> Ver proyectos
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="mailto:tuemail@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-glow"></div>
+          <img src="https://i.pravatar.cc/400" alt="Yamilet Díaz" class="avatar-img">
+          <div class="hero-image-ring"></div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card" data-count="5">
+            <h3 class="stat-number">0+</h3>
+            <span>Proyectos</span>
+          </div>
+          <div class="stat-card" data-count="1">
+            <h3 class="stat-number">0+</h3>
+            <span>Años exp.</span>
+          </div>
+          <div class="stat-card" data-count="100">
+            <h3 class="stat-number">0%</h3>
+            <span>Motivación</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ACERCA DE -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Conóceme</span>
+        <h2 class="section-title">Acerca de <span class="gradient-text">mí</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image" data-animate>
+          <div class="about-image-card">
+            <img src="https://i.pravatar.cc/500" alt="Yamilet Díaz">
+            <div class="about-experience-badge">
+              <h3>1+</h3>
+              <span>Año de<br>experiencia</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content" data-animate>
+          <h3>Desarrolladora Web Full Stack Junior</h3>
+          <p>
+            Soy una desarrolladora apasionada por la tecnología con enfoque en el desarrollo web.
+            Mi experiencia abarca tanto el frontend como el backend, utilizando tecnologías modernas
+            para crear soluciones digitales efectivas.
+          </p>
+          <p>
+            Me especializo en Python con Django para el backend y JavaScript con React para el frontend.
+            Siempre estoy aprendiendo nuevas tecnologías y mejores prácticas para entregar código limpio y eficiente.
+          </p>
+          <div class="about-info-grid">
+            <div class="about-info-item">
+              <i class="fas fa-user"></i>
+              <div>
+                <span>Nombre</span>
+                <strong>Yamilet Díaz</strong>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <strong>tuemail@email.com</strong>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span>Ubicación</span>
+                <strong>República Dominicana</strong>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <span>Disponibilidad</span>
+                <strong>Freelance / Empleo</strong>
+              </div>
+            </div>
+          </div>
+          <a href="assets/cv/Yamilet_Diaz_CV.pdf" download class="btn btn-primary"><i class="fas fa-download"></i> Descargar CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REANUDAR / RESUME -->
+  <section class="section resume" id="resume">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Mi trayectoria</span>
+        <h2 class="section-title">Mi <span class="gradient-text">Reanudar</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="resume-grid">
+        <!-- Educación -->
+        <div class="resume-column" data-animate>
+          <h3 class="resume-column-title"><i class="fas fa-graduation-cap"></i> Educación</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024 - Presente</span>
+                <h4>Ingeniería en Software</h4>
+                <p class="timeline-place">Universidad Tecnológica</p>
+                <p>Formación integral en desarrollo de software, algoritmos, bases de datos y arquitectura de sistemas.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025</span>
+                <h4>Bootcamp Full Stack Python</h4>
+                <p class="timeline-place">Academia Digital</p>
+                <p>Desarrollo web completo con Python, Django, JavaScript, React y PostgreSQL.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025</span>
+                <h4>Certificación Frontend</h4>
+                <p class="timeline-place">Platzi / Udemy</p>
+                <p>HTML5, CSS3, JavaScript moderno, React y diseño responsivo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Experiencia -->
+        <div class="resume-column" data-animate>
+          <h3 class="resume-column-title"><i class="fas fa-briefcase"></i> Experiencia</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025 - Presente</span>
+                <h4>Desarrolladora Web Freelance</h4>
+                <p class="timeline-place">Independiente</p>
+                <p>Creación de sitios web y aplicaciones para clientes usando Django y React.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025</span>
+                <h4>Proyectos Personales</h4>
+                <p class="timeline-place">GitHub</p>
+                <p>Desarrollo de aplicaciones CRUD, APIs REST y sistemas de gestión.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024</span>
+                <h4>Pasantía en Desarrollo</h4>
+                <p class="timeline-place">Empresa Tech</p>
+                <p>Colaboración en proyectos internos con Python y bases de datos relacionales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Skills -->
+      <div class="skills-section" data-animate>
+        <h3 class="resume-column-title"><i class="fas fa-code"></i> Habilidades técnicas</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Python / Django</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>JavaScript / React</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>HTML5 / CSS3</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>PostgreSQL / SQL</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>Git / GitHub</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>REST APIs</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Lo que ofrezco</span>
+        <h2 class="section-title">Mis <span class="gradient-text">Servicios</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-animate>
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Desarrollo Frontend</h3>
+          <p>Interfaces modernas, responsivas y atractivas usando React, HTML5, CSS3 y JavaScript con las mejores prácticas de UX/UI.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Sitios web responsivos</li>
+            <li><i class="fas fa-check"></i> Aplicaciones SPA con React</li>
+            <li><i class="fas fa-check"></i> Animaciones y transiciones</li>
+          </ul>
+        </div>
+        <div class="service-card featured" data-animate>
+          <div class="service-badge">Popular</div>
+          <div class="service-icon"><i class="fas fa-server"></i></div>
+          <h3>Desarrollo Backend</h3>
+          <p>APIs robustas y escalables con Python y Django, incluyendo autenticación, bases de datos y despliegue en la nube.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> APIs REST con Django</li>
+            <li><i class="fas fa-check"></i> Bases de datos PostgreSQL</li>
+            <li><i class="fas fa-check"></i> Autenticación y seguridad</li>
+          </ul>
+        </div>
+        <div class="service-card" data-animate>
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Diseño Web</h3>
+          <p>Diseños atractivos y funcionales centrados en la experiencia del usuario, con enfoque en usabilidad y estética.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Diseño UI/UX</li>
+            <li><i class="fas fa-check"></i> Prototipado</li>
+            <li><i class="fas fa-check"></i> Diseño responsive</li>
+          </ul>
+        </div>
+        <div class="service-card" data-animate>
+          <div class="service-icon"><i class="fas fa-database"></i></div>
+          <h3>Bases de Datos</h3>
+          <p>Diseño e implementación de bases de datos eficientes, optimizadas y seguras para tus aplicaciones.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Modelado de datos</li>
+            <li><i class="fas fa-check"></i> Optimización de consultas</li>
+            <li><i class="fas fa-check"></i> Migraciones y backups</li>
+          </ul>
+        </div>
+        <div class="service-card" data-animate>
+          <div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <h3>Despliegue</h3>
+          <p>Configuración y despliegue de aplicaciones en servicios cloud como Render, Vercel y Railway.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Deploy en Render/Vercel</li>
+            <li><i class="fas fa-check"></i> Configuración de dominios</li>
+            <li><i class="fas fa-check"></i> CI/CD básico</li>
+          </ul>
+        </div>
+        <div class="service-card" data-animate>
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Aplicaciones Web</h3>
+          <p>Desarrollo de aplicaciones web completas full stack con funcionalidad real y código limpio.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> CRUD completo</li>
+            <li><i class="fas fa-check"></i> Panel de administración</li>
+            <li><i class="fas fa-check"></i> Integración de APIs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTERA / PORTFOLIO -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Mi trabajo</span>
+        <h2 class="section-title">Mi <span class="gradient-text">Cartera</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="portfolio-filters" data-animate>
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">Aplicaciones</button>
+        <button class="filter-btn" data-filter="design">Diseño</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-category="web" data-animate>
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Sistema de Gestión">
+            <div class="portfolio-overlay">
+              <div class="portfolio-actions">
+                <a href="#" class="portfolio-btn" aria-label="Ver proyecto"><i class="fas fa-eye"></i></a>
+                <a href="#" class="portfolio-btn" aria-label="Ver código"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Web App</span>
+            <h3>Sistema de Gestión</h3>
+            <p>CRUD completo con Django + autenticación de usuarios</p>
+            <div class="portfolio-tech">
+              <span>Python</span><span>Django</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-category="app" data-animate>
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&h=400&fit=crop" alt="App de Tareas">
+            <div class="portfolio-overlay">
+              <div class="portfolio-actions">
+                <a href="#" class="portfolio-btn" aria-label="Ver proyecto"><i class="fas fa-eye"></i></a>
+                <a href="#" class="portfolio-btn" aria-label="Ver código"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Aplicación</span>
+            <h3>App de Tareas</h3>
+            <p>API REST con React frontend interactivo</p>
+            <div class="portfolio-tech">
+              <span>React</span><span>Django REST</span><span>API</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-category="design" data-animate>
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop" alt="Landing Page">
+            <div class="portfolio-overlay">
+              <div class="portfolio-actions">
+                <a href="#" class="portfolio-btn" aria-label="Ver proyecto"><i class="fas fa-eye"></i></a>
+                <a href="#" class="portfolio-btn" aria-label="Ver código"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Diseño</span>
+            <h3>Landing Page Premium</h3>
+            <p>Diseño moderno y responsive con animaciones CSS</p>
+            <div class="portfolio-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-category="web" data-animate>
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" alt="E-commerce">
+            <div class="portfolio-overlay">
+              <div class="portfolio-actions">
+                <a href="#" class="portfolio-btn" aria-label="Ver proyecto"><i class="fas fa-eye"></i></a>
+                <a href="#" class="portfolio-btn" aria-label="Ver código"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Web App</span>
+            <h3>E-commerce</h3>
+            <p>Tienda online con carrito de compras y pagos</p>
+            <div class="portfolio-tech">
+              <span>Django</span><span>React</span><span>Stripe</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-category="app" data-animate>
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Dashboard Analytics">
+            <div class="portfolio-overlay">
+              <div class="portfolio-actions">
+                <a href="#" class="portfolio-btn" aria-label="Ver proyecto"><i class="fas fa-eye"></i></a>
+                <a href="#" class="portfolio-btn" aria-label="Ver código"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Aplicación</span>
+            <h3>Dashboard Analytics</h3>
+            <p>Panel de análisis con gráficos interactivos</p>
+            <div class="portfolio-tech">
+              <span>React</span><span>Chart.js</span><span>API</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-category="design" data-animate>
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&h=400&fit=crop" alt="Blog Personal">
+            <div class="portfolio-overlay">
+              <div class="portfolio-actions">
+                <a href="#" class="portfolio-btn" aria-label="Ver proyecto"><i class="fas fa-eye"></i></a>
+                <a href="#" class="portfolio-btn" aria-label="Ver código"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-category">Diseño</span>
+            <h3>Blog Personal</h3>
+            <p>Blog con diseño minimalista y CMS integrado</p>
+            <div class="portfolio-tech">
+              <span>Django</span><span>HTML5</span><span>CSS3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Hablemos</span>
+        <h2 class="section-title">Ponte en <span class="gradient-text">Contacto</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-animate>
+          <h3>¿Tienes un proyecto en mente?</h3>
+          <p>No dudes en contactarme. Estaré encantada de hablar sobre tu proyecto y cómo puedo ayudarte.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span>Email</span>
+                <strong>tuemail@email.com</strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span>Teléfono</span>
+                <strong>+1 (809) 000-0000</strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span>Ubicación</span>
+                <strong>República Dominicana</strong>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" data-animate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" name="name" required placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="tu@email.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" required placeholder="¿En qué puedo ayudarte?">
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-full">
+            <i class="fas fa-paper-plane"></i> Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="#home" class="logo">Y<span>.</span></a>
+          <p>Desarrolladora web apasionada por crear experiencias digitales únicas y funcionales.</p>
+          <div class="footer-social">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Enlaces rápidos</h4>
+          <a href="#home">Inicio</a>
+          <a href="#about">Acerca de</a>
+          <a href="#services">Servicios</a>
+          <a href="#portfolio">Cartera</a>
+        </div>
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <a href="#services">Desarrollo Frontend</a>
+          <a href="#services">Desarrollo Backend</a>
+          <a href="#services">Diseño Web</a>
+          <a href="#services">Aplicaciones Web</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Yamilet Díaz. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
