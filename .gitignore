@@ -262,3 +262,12 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,visualstudiocode,webstorm,sublimetext,vim
+
+# Django
+*.pyc
+__pycache__/
+db.sqlite3
+staticfiles/
+media/
+.env
+*.log

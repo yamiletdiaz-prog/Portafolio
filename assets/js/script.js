@@ -210,7 +210,7 @@ backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ===== CONTACT FORM =====
+// ===== CONTACT FORM (AJAX with Django CSRF) =====
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
@@ -218,20 +218,51 @@ if (contactForm) {
 
     const btn = contactForm.querySelector('button[type="submit"]');
     const originalText = btn.innerHTML;
+    const messagesDiv = document.getElementById('formMessages');
     btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
     btn.disabled = true;
+    if (messagesDiv) messagesDiv.innerHTML = '';
 
-    setTimeout(() => {
-      btn.innerHTML = '<i class="fas fa-check"></i> ¡Mensaje enviado!';
-      btn.style.background = 'linear-gradient(135deg, #00d4aa, #00b894)';
+    const formData = new FormData(contactForm);
 
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest',
+      },
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        btn.innerHTML = '<i class="fas fa-check"></i> ¡Mensaje enviado!';
+        btn.style.background = 'linear-gradient(135deg, #00d4aa, #00b894)';
+        if (messagesDiv) {
+          messagesDiv.innerHTML = '<div class="form-alert success"><i class="fas fa-check-circle"></i> ' + data.message + '</div>';
+        }
+        contactForm.reset();
+      } else {
+        btn.innerHTML = '<i class="fas fa-times"></i> Error';
+        btn.style.background = 'linear-gradient(135deg, #ff6b6b, #ee5a24)';
+        if (messagesDiv) {
+          messagesDiv.innerHTML = '<div class="form-alert error"><i class="fas fa-exclamation-circle"></i> ' + data.message + '</div>';
+        }
+      }
       setTimeout(() => {
         btn.innerHTML = originalText;
         btn.style.background = '';
         btn.disabled = false;
-        contactForm.reset();
       }, 3000);
-    }, 1500);
+    })
+    .catch(() => {
+      btn.innerHTML = '<i class="fas fa-times"></i> Error de conexión';
+      btn.style.background = 'linear-gradient(135deg, #ff6b6b, #ee5a24)';
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
+    });
   });
 }
 

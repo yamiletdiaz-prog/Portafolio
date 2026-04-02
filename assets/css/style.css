@@ -1259,6 +1259,29 @@ img {
   min-height: 120px;
 }
 
+/* Form alerts */
+.form-alert {
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-alert.success {
+  background: rgba(0, 212, 170, 0.1);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  color: var(--accent-3);
+}
+
+.form-alert.error {
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  color: #ff6b6b;
+}
+
 /* ===== FOOTER ===== */
 .footer {
   background: var(--bg-secondary);
